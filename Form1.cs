@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SalesSystem
@@ -15,33 +10,38 @@ namespace SalesSystem
         public Form_login()
         {
             InitializeComponent();
+            this.Load += Form1_Load;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Password.UseSystemPasswordChar = true; 
+            Password.UseSystemPasswordChar = false;
+            
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+       
+        private void Form_login_Resize(object sender, EventArgs e)
+        {
+            Utility.CenterPanel(panel1, this);
+        }
+
+       
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
         {
             if (Password.UseSystemPasswordChar)
             {
-                Password.UseSystemPasswordChar = false; 
+                Password.UseSystemPasswordChar = false; // إظهار كلمة المرور
                 toolTip1.SetToolTip(pictureBox5, "إخفاء");
-                pictureBox5.Image = Properties.Resources._7794218;
+                pictureBox5.Image = Properties.Resources._7794218; // تغيير صورة العين (إظهار)
             }
             else
             {
-                Password.UseSystemPasswordChar = true; 
+                Password.UseSystemPasswordChar = true; // إخفاء كلمة المرور
                 toolTip1.SetToolTip(pictureBox5, "إظهار");
-               
-                pictureBox5.Image = Properties.Resources._8395688;
+                pictureBox5.Image = Properties.Resources._8395688; // تغيير صورة العين (إخفاء)
             }
         }
-
-        private void Password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+    }
+
