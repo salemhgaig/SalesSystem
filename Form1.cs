@@ -10,43 +10,38 @@ using System.Windows.Forms;
 
 namespace SalesSystem
 {
-    public partial class Face_login : Form
+    public partial class Form_login : Form
     {
-        public Face_login()
+        public Form_login()
         {
             InitializeComponent();
         }
-        bool ShowTheCode = true;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Password.UseSystemPasswordChar = true; 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
- 
-        }
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (ShowTheCode)
+            if (Password.UseSystemPasswordChar)
             {
-
-                toolTip1.SetToolTip(pictureBox5, "اخفاء");
-                textBox1.PasswordChar = ' ';
-                ShowTheCode = false;
-                pictureBox5.Image = Properties.Resources._8395688;
-
-
-            }
-        
-         else
-            {
-
-                toolTip1.SetToolTip(pictureBox5, "اظهار");
-                ShowTheCode = true;
+                Password.UseSystemPasswordChar = false; 
+                toolTip1.SetToolTip(pictureBox5, "إخفاء");
                 pictureBox5.Image = Properties.Resources._7794218;
-                textBox1.PasswordChar = '*';
             }
+            else
+            {
+                Password.UseSystemPasswordChar = true; 
+                toolTip1.SetToolTip(pictureBox5, "إظهار");
+               
+                pictureBox5.Image = Properties.Resources._8395688;
+            }
+        }
+
+        private void Password_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
