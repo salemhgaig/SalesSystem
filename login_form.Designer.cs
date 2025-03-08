@@ -135,6 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(477, 435);
             this.Controls.Add(this.panel1);
@@ -144,7 +145,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "تسجيل الدخول ";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form_login_Load);
             this.Resize += new System.EventHandler(this.Form_login_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

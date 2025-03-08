@@ -10,14 +10,9 @@ namespace SalesSystem
         public Form_login()
         {
             InitializeComponent();
-            this.Load += Form1_Load;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Password.UseSystemPasswordChar = false;
-            
-        }
+       
 
        
         private void Form_login_Resize(object sender, EventArgs e)
@@ -41,6 +36,12 @@ namespace SalesSystem
                 toolTip1.SetToolTip(pictureBox5, "إظهار");
                 pictureBox5.Image = Properties.Resources._8395688; // تغيير صورة العين (إخفاء)
             }
+        }
+
+        private void Form_login_Load(object sender, EventArgs e)
+        {
+            Password.UseSystemPasswordChar = false;
+
         }
     }
     }
