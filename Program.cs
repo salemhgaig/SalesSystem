@@ -16,7 +16,7 @@ namespace SalesSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new User_managment());
+            Application.Run(new Form_login());
         }
     }
 }
