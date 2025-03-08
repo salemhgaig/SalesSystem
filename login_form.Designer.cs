@@ -35,7 +35,7 @@
             this.Password = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.Password);
             this.panel1.Controls.Add(this.Title);
             this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.LoginBtn);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.textBox1);
@@ -61,6 +61,7 @@
             // 
             // Password
             // 
+            this.Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Password.Location = new System.Drawing.Point(77, 207);
             this.Password.Margin = new System.Windows.Forms.Padding(5);
             this.Password.Multiline = true;
@@ -74,9 +75,9 @@
             // 
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.Title.Location = new System.Drawing.Point(97, 25);
+            this.Title.Location = new System.Drawing.Point(148, 24);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(256, 54);
+            this.Title.Size = new System.Drawing.Size(177, 37);
             this.Title.TabIndex = 36;
             this.Title.Text = "تسجيل الدخول";
             // 
@@ -91,14 +92,18 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click_1);
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.Location = new System.Drawing.Point(77, 324);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(284, 38);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "دخول ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.LoginBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LoginBtn.Location = new System.Drawing.Point(77, 324);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(284, 38);
+            this.LoginBtn.TabIndex = 34;
+            this.LoginBtn.Text = "دخول ";
+            this.LoginBtn.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -124,6 +129,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(75, 107);
             this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Multiline = true;
@@ -133,7 +139,7 @@
             // 
             // Form_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -163,7 +169,7 @@
         private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
