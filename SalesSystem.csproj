@@ -104,6 +104,7 @@
     <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\DS-DIGIB.TTF" />
     <None Include="Resources\image_2025-03-06_17-03-33.png" />
   </ItemGroup>
   <ItemGroup>
