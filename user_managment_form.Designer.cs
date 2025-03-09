@@ -116,6 +116,7 @@
             this.Controls.Add(this.usersGrid);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "User_managment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ادارة مستخدمين";
             this.Resize += new System.EventHandler(this.User_managment_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.usersGrid)).EndInit();

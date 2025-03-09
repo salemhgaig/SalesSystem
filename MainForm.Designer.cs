@@ -125,11 +125,11 @@
             // 
             // OperationPanel
             // 
-            this.OperationPanel.Controls.Add(this.PrintInvoice_Btn);
-            this.OperationPanel.Controls.Add(this.EditInvoice_Btn);
             this.OperationPanel.Controls.Add(this.NewInvoice_Btn);
             this.OperationPanel.Controls.Add(this.SaveInvoice_Btn);
             this.OperationPanel.Controls.Add(this.CancelInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.EditInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.PrintInvoice_Btn);
             this.OperationPanel.Location = new System.Drawing.Point(0, 25);
             this.OperationPanel.Name = "OperationPanel";
             this.OperationPanel.Size = new System.Drawing.Size(207, 352);
@@ -137,7 +137,7 @@
             // 
             // PrintInvoice_Btn
             // 
-            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 3);
+            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 283);
             this.PrintInvoice_Btn.Name = "PrintInvoice_Btn";
             this.PrintInvoice_Btn.Size = new System.Drawing.Size(200, 64);
             this.PrintInvoice_Btn.TabIndex = 4;
@@ -147,7 +147,7 @@
             // 
             // EditInvoice_Btn
             // 
-            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 73);
+            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 213);
             this.EditInvoice_Btn.Name = "EditInvoice_Btn";
             this.EditInvoice_Btn.Size = new System.Drawing.Size(200, 64);
             this.EditInvoice_Btn.TabIndex = 2;
@@ -156,7 +156,7 @@
             // 
             // NewInvoice_Btn
             // 
-            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 143);
+            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 3);
             this.NewInvoice_Btn.Name = "NewInvoice_Btn";
             this.NewInvoice_Btn.Size = new System.Drawing.Size(200, 64);
             this.NewInvoice_Btn.TabIndex = 0;
@@ -165,7 +165,7 @@
             // 
             // SaveInvoice_Btn
             // 
-            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 213);
+            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 73);
             this.SaveInvoice_Btn.Name = "SaveInvoice_Btn";
             this.SaveInvoice_Btn.Size = new System.Drawing.Size(200, 64);
             this.SaveInvoice_Btn.TabIndex = 1;
@@ -174,7 +174,7 @@
             // 
             // CancelInvoice_Btn
             // 
-            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 283);
+            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 143);
             this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
             this.CancelInvoice_Btn.Size = new System.Drawing.Size(200, 64);
             this.CancelInvoice_Btn.TabIndex = 3;
@@ -272,6 +272,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "المبيعات";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip.ResumeLayout(false);
