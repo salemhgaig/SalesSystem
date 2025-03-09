@@ -1,0 +1,273 @@
+﻿namespace SalesSystem
+{
+    partial class MainForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.الاعداداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ادارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ادارةالمنتجاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.اضافةمنتجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.حذفمنتجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تعديلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.عرضالمنتجاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.المنتجاتالتالفةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OperationPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.NewInvoice_Btn = new System.Windows.Forms.Button();
+            this.SaveInvoice_Btn = new System.Windows.Forms.Button();
+            this.EditInvoice_Btn = new System.Windows.Forms.Button();
+            this.CancelInvoice_Btn = new System.Windows.Forms.Button();
+            this.PrintInvoice_Btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.menuStrip.SuspendLayout();
+            this.OperationPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.الاعداداتToolStripMenuItem,
+            this.ادارةالمستخدمينToolStripMenuItem,
+            this.ادارةالمنتجاتToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip.Size = new System.Drawing.Size(1208, 35);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // الاعداداتToolStripMenuItem
+            // 
+            this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
+            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(100, 29);
+            this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
+            // 
+            // ادارةالمستخدمينToolStripMenuItem
+            // 
+            this.ادارةالمستخدمينToolStripMenuItem.Name = "ادارةالمستخدمينToolStripMenuItem";
+            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.ادارةالمستخدمينToolStripMenuItem.Text = "ادارة المستخدمين";
+            // 
+            // ادارةالمنتجاتToolStripMenuItem
+            // 
+            this.ادارةالمنتجاتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.اضافةمنتجToolStripMenuItem,
+            this.حذفمنتجToolStripMenuItem,
+            this.تعديلToolStripMenuItem,
+            this.عرضالمنتجاتToolStripMenuItem,
+            this.المنتجاتالتالفةToolStripMenuItem});
+            this.ادارةالمنتجاتToolStripMenuItem.Name = "ادارةالمنتجاتToolStripMenuItem";
+            this.ادارةالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(134, 29);
+            this.ادارةالمنتجاتToolStripMenuItem.Text = "ادارة المنتجات";
+            // 
+            // اضافةمنتجToolStripMenuItem
+            // 
+            this.اضافةمنتجToolStripMenuItem.Name = "اضافةمنتجToolStripMenuItem";
+            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.اضافةمنتجToolStripMenuItem.Text = "اضافة منتج";
+            // 
+            // حذفمنتجToolStripMenuItem
+            // 
+            this.حذفمنتجToolStripMenuItem.Name = "حذفمنتجToolStripMenuItem";
+            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.حذفمنتجToolStripMenuItem.Text = "حذف منتج";
+            // 
+            // تعديلToolStripMenuItem
+            // 
+            this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
+            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.تعديلToolStripMenuItem.Text = "تعديل";
+            // 
+            // عرضالمنتجاتToolStripMenuItem
+            // 
+            this.عرضالمنتجاتToolStripMenuItem.Name = "عرضالمنتجاتToolStripMenuItem";
+            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.عرضالمنتجاتToolStripMenuItem.Text = "عرض المنتجات";
+            // 
+            // المنتجاتالتالفةToolStripMenuItem
+            // 
+            this.المنتجاتالتالفةToolStripMenuItem.Name = "المنتجاتالتالفةToolStripMenuItem";
+            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.المنتجاتالتالفةToolStripMenuItem.Text = "المنتجات التالفة";
+            // 
+            // OperationPanel
+            // 
+            this.OperationPanel.Controls.Add(this.PrintInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.EditInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.NewInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.SaveInvoice_Btn);
+            this.OperationPanel.Controls.Add(this.CancelInvoice_Btn);
+            this.OperationPanel.Location = new System.Drawing.Point(0, 25);
+            this.OperationPanel.Name = "OperationPanel";
+            this.OperationPanel.Size = new System.Drawing.Size(207, 352);
+            this.OperationPanel.TabIndex = 1;
+            // 
+            // NewInvoice_Btn
+            // 
+            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 143);
+            this.NewInvoice_Btn.Name = "NewInvoice_Btn";
+            this.NewInvoice_Btn.Size = new System.Drawing.Size(200, 64);
+            this.NewInvoice_Btn.TabIndex = 0;
+            this.NewInvoice_Btn.Text = "فاتورة جديدة";
+            this.NewInvoice_Btn.UseVisualStyleBackColor = true;
+            // 
+            // SaveInvoice_Btn
+            // 
+            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 213);
+            this.SaveInvoice_Btn.Name = "SaveInvoice_Btn";
+            this.SaveInvoice_Btn.Size = new System.Drawing.Size(200, 64);
+            this.SaveInvoice_Btn.TabIndex = 1;
+            this.SaveInvoice_Btn.Text = "حفظ فاتورة";
+            this.SaveInvoice_Btn.UseVisualStyleBackColor = true;
+            // 
+            // EditInvoice_Btn
+            // 
+            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 73);
+            this.EditInvoice_Btn.Name = "EditInvoice_Btn";
+            this.EditInvoice_Btn.Size = new System.Drawing.Size(200, 64);
+            this.EditInvoice_Btn.TabIndex = 2;
+            this.EditInvoice_Btn.Text = "تعديل فاتورة";
+            this.EditInvoice_Btn.UseVisualStyleBackColor = true;
+            // 
+            // CancelInvoice_Btn
+            // 
+            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 283);
+            this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
+            this.CancelInvoice_Btn.Size = new System.Drawing.Size(200, 64);
+            this.CancelInvoice_Btn.TabIndex = 3;
+            this.CancelInvoice_Btn.Text = "الغاء فاتورة";
+            this.CancelInvoice_Btn.UseVisualStyleBackColor = true;
+            // 
+            // PrintInvoice_Btn
+            // 
+            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 3);
+            this.PrintInvoice_Btn.Name = "PrintInvoice_Btn";
+            this.PrintInvoice_Btn.Size = new System.Drawing.Size(200, 64);
+            this.PrintInvoice_Btn.TabIndex = 4;
+            this.PrintInvoice_Btn.Text = "طباعة فاتورة";
+            this.PrintInvoice_Btn.UseVisualStyleBackColor = true;
+            this.PrintInvoice_Btn.Click += new System.EventHandler(this.PrintInvoice_Btn_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 383);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1208, 180);
+            this.panel1.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Yellow;
+            this.textBox1.Location = new System.Drawing.Point(3, 18);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(132, 36);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Yellow;
+            this.textBox2.Location = new System.Drawing.Point(3, 75);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(132, 36);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.MenuText;
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Yellow;
+            this.textBox3.Location = new System.Drawing.Point(3, 132);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(132, 36);
+            this.textBox3.TabIndex = 2;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1208, 563);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.OperationPanel);
+            this.Controls.Add(this.menuStrip);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMenuStrip = this.menuStrip;
+            this.Name = "MainForm";
+            this.Text = "المبيعات";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            this.OperationPanel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem الاعداداتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ادارةالمستخدمينToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ادارةالمنتجاتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem اضافةمنتجToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem حذفمنتجToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem تعديلToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem عرضالمنتجاتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem المنتجاتالتالفةToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel OperationPanel;
+        private System.Windows.Forms.Button NewInvoice_Btn;
+        private System.Windows.Forms.Button SaveInvoice_Btn;
+        private System.Windows.Forms.Button EditInvoice_Btn;
+        private System.Windows.Forms.Button CancelInvoice_Btn;
+        private System.Windows.Forms.Button PrintInvoice_Btn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+    }
+}
