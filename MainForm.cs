@@ -34,7 +34,6 @@ namespace SalesSystem
             pfc.AddMemoryFont(fontPtr, dataLength);
             Marshal.FreeCoTaskMem(fontPtr);
 
-            // تطبيق الخط على عناصر الواجهة
             Total_textBox.Font = new Font(pfc.Families[0], 19, FontStyle.Bold); // يمكنك تغيير الحجم
             Discount_textBox.Font = new Font(pfc.Families[0], 19, FontStyle.Bold);
             Net_textBox.Font = new Font(pfc.Families[0], 19, FontStyle.Bold);

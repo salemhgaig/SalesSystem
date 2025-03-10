@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.الاعداداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,31 +96,31 @@
             // اضافةمنتجToolStripMenuItem
             // 
             this.اضافةمنتجToolStripMenuItem.Name = "اضافةمنتجToolStripMenuItem";
-            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.اضافةمنتجToolStripMenuItem.Text = "اضافة منتج";
             // 
             // حذفمنتجToolStripMenuItem
             // 
             this.حذفمنتجToolStripMenuItem.Name = "حذفمنتجToolStripMenuItem";
-            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.حذفمنتجToolStripMenuItem.Text = "حذف منتج";
             // 
             // تعديلToolStripMenuItem
             // 
             this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
-            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.تعديلToolStripMenuItem.Text = "تعديل";
             // 
             // عرضالمنتجاتToolStripMenuItem
             // 
             this.عرضالمنتجاتToolStripMenuItem.Name = "عرضالمنتجاتToolStripMenuItem";
-            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.عرضالمنتجاتToolStripMenuItem.Text = "عرض المنتجات";
             // 
             // المنتجاتالتالفةToolStripMenuItem
             // 
             this.المنتجاتالتالفةToolStripMenuItem.Name = "المنتجاتالتالفةToolStripMenuItem";
-            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.المنتجاتالتالفةToolStripMenuItem.Text = "المنتجات التالفة";
             // 
             // OperationPanel
@@ -249,7 +248,7 @@
             // 
             this.CancelInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CancelInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelInvoice_Btn.Image = ((System.Drawing.Image)(resources.GetObject("CancelInvoice_Btn.Image")));
+            this.CancelInvoice_Btn.Image = global::SalesSystem.Properties.Resources.close__1_;
             this.CancelInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 143);
             this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
@@ -263,7 +262,7 @@
             // 
             this.EditInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
             this.EditInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditInvoice_Btn.Image = global::SalesSystem.Properties.Resources.close__1_;
+            this.EditInvoice_Btn.Image = global::SalesSystem.Properties.Resources.edit__1_;
             this.EditInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 213);
             this.EditInvoice_Btn.Name = "EditInvoice_Btn";
