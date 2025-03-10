@@ -3,11 +3,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
+using System.Collections.Generic;
 
 namespace SalesSystem
 {
     public partial class MainForm : Form
     {
+     
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbfont, uint cbfont, IntPtr pdv, [In] ref uint pcFonts);
 
@@ -38,9 +40,10 @@ namespace SalesSystem
             Discount_textBox.Font = new Font(pfc.Families[0], 19, FontStyle.Bold);
             Net_textBox.Font = new Font(pfc.Families[0], 19, FontStyle.Bold);
         }
-
+     
         private void MainForm_Load(object sender, EventArgs e)
         {
+         
         }
 
         private void PrintInvoice_Btn_Click(object sender, EventArgs e)
@@ -52,5 +55,24 @@ namespace SalesSystem
 
         }
 
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

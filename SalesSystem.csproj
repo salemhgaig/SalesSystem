@@ -182,5 +182,32 @@
   <ItemGroup>
     <None Include="Resources\diskette %281%291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\features.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\long-term-debt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atm-card.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
