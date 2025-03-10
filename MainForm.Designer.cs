@@ -190,7 +190,7 @@
             this.OperationPanel.SetFlowBreak(this.NewInvoice_Btn, true);
             this.NewInvoice_Btn.Image = global::SalesSystem.Properties.Resources.plus__1_;
             this.NewInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NewInvoice_Btn.Location = new System.Drawing.Point(5, 3);
+            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 3);
             this.NewInvoice_Btn.Name = "NewInvoice_Btn";
             this.NewInvoice_Btn.Size = new System.Drawing.Size(107, 44);
             this.NewInvoice_Btn.TabIndex = 0;
@@ -205,7 +205,7 @@
             this.SaveInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveInvoice_Btn.Image = global::SalesSystem.Properties.Resources.diskette__1_;
             this.SaveInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SaveInvoice_Btn.Location = new System.Drawing.Point(5, 53);
+            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 53);
             this.SaveInvoice_Btn.Name = "SaveInvoice_Btn";
             this.SaveInvoice_Btn.Size = new System.Drawing.Size(107, 44);
             this.SaveInvoice_Btn.TabIndex = 1;
@@ -219,7 +219,7 @@
             this.CancelInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelInvoice_Btn.Image = global::SalesSystem.Properties.Resources.close__1_;
             this.CancelInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CancelInvoice_Btn.Location = new System.Drawing.Point(5, 103);
+            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 103);
             this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
             this.CancelInvoice_Btn.Size = new System.Drawing.Size(107, 44);
             this.CancelInvoice_Btn.TabIndex = 3;
@@ -233,7 +233,7 @@
             this.EditInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditInvoice_Btn.Image = global::SalesSystem.Properties.Resources.edit__1_;
             this.EditInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EditInvoice_Btn.Location = new System.Drawing.Point(5, 153);
+            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 153);
             this.EditInvoice_Btn.Name = "EditInvoice_Btn";
             this.EditInvoice_Btn.Size = new System.Drawing.Size(107, 44);
             this.EditInvoice_Btn.TabIndex = 2;
@@ -247,7 +247,7 @@
             this.PrintInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PrintInvoice_Btn.Image = global::SalesSystem.Properties.Resources.printer__1_;
             this.PrintInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PrintInvoice_Btn.Location = new System.Drawing.Point(5, 203);
+            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 203);
             this.PrintInvoice_Btn.Name = "PrintInvoice_Btn";
             this.PrintInvoice_Btn.Size = new System.Drawing.Size(107, 44);
             this.PrintInvoice_Btn.TabIndex = 4;
@@ -262,7 +262,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::SalesSystem.Properties.Resources.cancel__1_;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(5, 253);
+            this.button1.Location = new System.Drawing.Point(3, 253);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 44);
             this.button1.TabIndex = 5;
@@ -276,7 +276,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = global::SalesSystem.Properties.Resources.atm_card;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(5, 303);
+            this.button2.Location = new System.Drawing.Point(3, 303);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 44);
             this.button2.TabIndex = 6;
@@ -378,6 +378,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(813, 42);
             this.label4.Name = "label4";
@@ -399,7 +401,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MainForm";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "المبيعات";
             this.Load += new System.EventHandler(this.MainForm_Load);
