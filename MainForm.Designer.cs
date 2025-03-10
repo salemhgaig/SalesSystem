@@ -55,11 +55,15 @@
             this.Net_textBox = new System.Windows.Forms.TextBox();
             this.Discount_textBox = new System.Windows.Forms.TextBox();
             this.Total_textBox = new System.Windows.Forms.TextBox();
-            this.ComboBoxSearchProducts = new System.Windows.Forms.ComboBox();
+            this.EnterCodeTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.ComboBoxSearchProducts = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -75,7 +79,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip.Size = new System.Drawing.Size(923, 24);
+            this.menuStrip.Size = new System.Drawing.Size(982, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -294,9 +298,9 @@
             this.panel1.Controls.Add(this.Discount_textBox);
             this.panel1.Controls.Add(this.Total_textBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 437);
+            this.panel1.Location = new System.Drawing.Point(0, 528);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(923, 123);
+            this.panel1.Size = new System.Drawing.Size(982, 123);
             this.panel1.TabIndex = 2;
             // 
             // label3
@@ -366,14 +370,25 @@
             this.Total_textBox.TabIndex = 0;
             this.Total_textBox.Text = "0.0";
             // 
-            // ComboBoxSearchProducts
+            // EnterCodeTextBox
             // 
-            this.ComboBoxSearchProducts.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxSearchProducts.FormattingEnabled = true;
-            this.ComboBoxSearchProducts.Location = new System.Drawing.Point(293, 39);
-            this.ComboBoxSearchProducts.Name = "ComboBoxSearchProducts";
-            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(514, 25);
-            this.ComboBoxSearchProducts.TabIndex = 3;
+            this.EnterCodeTextBox.Location = new System.Drawing.Point(361, 95);
+            this.EnterCodeTextBox.Multiline = true;
+            this.EnterCodeTextBox.Name = "EnterCodeTextBox";
+            this.EnterCodeTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.EnterCodeTextBox.Size = new System.Drawing.Size(504, 31);
+            this.EnterCodeTextBox.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.ComboBoxSearchProducts);
+            this.panel2.Location = new System.Drawing.Point(361, 27);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(621, 51);
+            this.panel2.TabIndex = 7;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label4
             // 
@@ -381,20 +396,43 @@
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(813, 42);
+            this.label4.Location = new System.Drawing.Point(523, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 19);
-            this.label4.TabIndex = 4;
+            this.label4.TabIndex = 6;
             this.label4.Text = "بحث عن صنف";
+            // 
+            // ComboBoxSearchProducts
+            // 
+            this.ComboBoxSearchProducts.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxSearchProducts.FormattingEnabled = true;
+            this.ComboBoxSearchProducts.Location = new System.Drawing.Point(3, 12);
+            this.ComboBoxSearchProducts.Name = "ComboBoxSearchProducts";
+            this.ComboBoxSearchProducts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(514, 25);
+            this.ComboBoxSearchProducts.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(871, 95);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 20);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "ادخال كود صنف";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(923, 560);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.ComboBoxSearchProducts);
+            this.ClientSize = new System.Drawing.Size(982, 651);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.EnterCodeTextBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.OperationPanel);
             this.Controls.Add(this.menuStrip);
@@ -411,6 +449,8 @@
             this.OperationPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -445,7 +485,10 @@
         private System.Windows.Forms.ToolStripMenuItem قائمةالديونToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox ComboBoxSearchProducts;
+        private System.Windows.Forms.TextBox EnterCodeTextBox;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox ComboBoxSearchProducts;
+        private System.Windows.Forms.Label label5;
     }
 }
