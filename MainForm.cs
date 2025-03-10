@@ -48,6 +48,9 @@ namespace SalesSystem
         {
         }
 
-   
+        private void NewInvoice_Btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

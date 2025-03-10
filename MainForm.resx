@@ -120,6 +120,24 @@
   <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CancelInvoice_Btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAALAAAACwARRqq2kAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAACTklEQVRIS7WVXU/TYBiGGxNbMZh4YsfA0U0P8cwDPfBX+CcIJGBMcCNGjFEJGGM0MRtyzIEgEVxG
+        FNTACsyoqAljQMTZdW4xfoyytUNhM3vsW993dqWbpeqdXGnSPrnu9knTUtXCdvCn2fanuYbOSMHpXZpz
+        dC0ew5f+Pi3tM/Vs2+Mi2/oIHGci4PRGVRbFlkvLNB6xH7btyRYSE34XYHzRZTxqLdx10dPcF0+4eldK
+        riuxsrhqgYonoCBynoA85L65cRCrzNPcr8pVMYFtnbRagJGHsMo85M4Jjo7pmgVNF98aCpQsVplHL9e4
+        HIPG7gVoPPdco6knBod7kxqu/jR4bueMBYBV5tlRYIC7kdohNIJV5jGT6vmnBe+EZEEQBNAjSRIY870I
+        a7YKuoOCPPoiuaHn7qsv8WmxGNbT92w7YqvAjN2uKPOg7kQmxHQCUHu0E3rZwzcfstF4arOCZCb99Vvp
+        tZ6Fjz94IncHlJgmUrMepHsSIzQIwzR8GmfWtBI7BS9xAZIfHVBYJM+E6AtEjlAmaQCeuWV/RX5llRvc
+        dNaQI+SKgq5xQR7kxayeO5HP8dHVQliPL7x1/w93ThirKLD4mi6pHNLkE/T5GvJ5mKcO7G5F6lrc/nyD
+        ZTmK8WNnpFwwoKTKa7EqR9H+BSZiAik44s+fRfOZIO1NYDE65qfKYoBZZg5mqHpNTOK5KnDctfdCtSch
+        Be5A7iSaT4/tlSzL7UQcoUu/1qKTG9diN9mJ/cf/mxxFCtWdUqYYRZWuwOy+e8DTvtproaifkSUCwgCy
+        rkEAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

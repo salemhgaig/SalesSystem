@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.الاعداداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,11 +39,6 @@
             this.عرضالمنتجاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.المنتجاتالتالفةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OperationPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.PrintInvoice_Btn = new System.Windows.Forms.Button();
-            this.EditInvoice_Btn = new System.Windows.Forms.Button();
-            this.NewInvoice_Btn = new System.Windows.Forms.Button();
-            this.SaveInvoice_Btn = new System.Windows.Forms.Button();
-            this.CancelInvoice_Btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +46,11 @@
             this.Net_textBox = new System.Windows.Forms.TextBox();
             this.Discount_textBox = new System.Windows.Forms.TextBox();
             this.Total_textBox = new System.Windows.Forms.TextBox();
+            this.NewInvoice_Btn = new System.Windows.Forms.Button();
+            this.SaveInvoice_Btn = new System.Windows.Forms.Button();
+            this.CancelInvoice_Btn = new System.Windows.Forms.Button();
+            this.EditInvoice_Btn = new System.Windows.Forms.Button();
+            this.PrintInvoice_Btn = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -132,54 +133,8 @@
             this.OperationPanel.Controls.Add(this.PrintInvoice_Btn);
             this.OperationPanel.Location = new System.Drawing.Point(0, 25);
             this.OperationPanel.Name = "OperationPanel";
-            this.OperationPanel.Size = new System.Drawing.Size(207, 352);
+            this.OperationPanel.Size = new System.Drawing.Size(115, 360);
             this.OperationPanel.TabIndex = 1;
-            // 
-            // PrintInvoice_Btn
-            // 
-            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 283);
-            this.PrintInvoice_Btn.Name = "PrintInvoice_Btn";
-            this.PrintInvoice_Btn.Size = new System.Drawing.Size(200, 64);
-            this.PrintInvoice_Btn.TabIndex = 4;
-            this.PrintInvoice_Btn.Text = "طباعة فاتورة";
-            this.PrintInvoice_Btn.UseVisualStyleBackColor = true;
-            this.PrintInvoice_Btn.Click += new System.EventHandler(this.PrintInvoice_Btn_Click);
-            // 
-            // EditInvoice_Btn
-            // 
-            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 213);
-            this.EditInvoice_Btn.Name = "EditInvoice_Btn";
-            this.EditInvoice_Btn.Size = new System.Drawing.Size(200, 64);
-            this.EditInvoice_Btn.TabIndex = 2;
-            this.EditInvoice_Btn.Text = "تعديل فاتورة";
-            this.EditInvoice_Btn.UseVisualStyleBackColor = true;
-            // 
-            // NewInvoice_Btn
-            // 
-            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 3);
-            this.NewInvoice_Btn.Name = "NewInvoice_Btn";
-            this.NewInvoice_Btn.Size = new System.Drawing.Size(200, 64);
-            this.NewInvoice_Btn.TabIndex = 0;
-            this.NewInvoice_Btn.Text = "فاتورة جديدة";
-            this.NewInvoice_Btn.UseVisualStyleBackColor = true;
-            // 
-            // SaveInvoice_Btn
-            // 
-            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 73);
-            this.SaveInvoice_Btn.Name = "SaveInvoice_Btn";
-            this.SaveInvoice_Btn.Size = new System.Drawing.Size(200, 64);
-            this.SaveInvoice_Btn.TabIndex = 1;
-            this.SaveInvoice_Btn.Text = "حفظ فاتورة";
-            this.SaveInvoice_Btn.UseVisualStyleBackColor = true;
-            // 
-            // CancelInvoice_Btn
-            // 
-            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 143);
-            this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
-            this.CancelInvoice_Btn.Size = new System.Drawing.Size(200, 64);
-            this.CancelInvoice_Btn.TabIndex = 3;
-            this.CancelInvoice_Btn.Text = "الغاء فاتورة";
-            this.CancelInvoice_Btn.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -191,9 +146,9 @@
             this.panel1.Controls.Add(this.Discount_textBox);
             this.panel1.Controls.Add(this.Total_textBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 380);
+            this.panel1.Location = new System.Drawing.Point(0, 383);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(923, 180);
+            this.panel1.Size = new System.Drawing.Size(923, 177);
             this.panel1.TabIndex = 2;
             // 
             // label3
@@ -259,6 +214,79 @@
             this.Total_textBox.Size = new System.Drawing.Size(78, 36);
             this.Total_textBox.TabIndex = 0;
             this.Total_textBox.Text = "0.0";
+            // 
+            // NewInvoice_Btn
+            // 
+            this.NewInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.NewInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OperationPanel.SetFlowBreak(this.NewInvoice_Btn, true);
+            this.NewInvoice_Btn.Image = global::SalesSystem.Properties.Resources.plus__1_;
+            this.NewInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NewInvoice_Btn.Location = new System.Drawing.Point(3, 3);
+            this.NewInvoice_Btn.Name = "NewInvoice_Btn";
+            this.NewInvoice_Btn.Size = new System.Drawing.Size(107, 64);
+            this.NewInvoice_Btn.TabIndex = 0;
+            this.NewInvoice_Btn.Text = "فاتورة جديدة";
+            this.NewInvoice_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NewInvoice_Btn.UseVisualStyleBackColor = false;
+            this.NewInvoice_Btn.Click += new System.EventHandler(this.NewInvoice_Btn_Click);
+            // 
+            // SaveInvoice_Btn
+            // 
+            this.SaveInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.SaveInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveInvoice_Btn.Image = global::SalesSystem.Properties.Resources.diskette__1_;
+            this.SaveInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SaveInvoice_Btn.Location = new System.Drawing.Point(3, 73);
+            this.SaveInvoice_Btn.Name = "SaveInvoice_Btn";
+            this.SaveInvoice_Btn.Size = new System.Drawing.Size(107, 64);
+            this.SaveInvoice_Btn.TabIndex = 1;
+            this.SaveInvoice_Btn.Text = "حفظ فاتورة";
+            this.SaveInvoice_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SaveInvoice_Btn.UseVisualStyleBackColor = false;
+            // 
+            // CancelInvoice_Btn
+            // 
+            this.CancelInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CancelInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelInvoice_Btn.Image = ((System.Drawing.Image)(resources.GetObject("CancelInvoice_Btn.Image")));
+            this.CancelInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CancelInvoice_Btn.Location = new System.Drawing.Point(3, 143);
+            this.CancelInvoice_Btn.Name = "CancelInvoice_Btn";
+            this.CancelInvoice_Btn.Size = new System.Drawing.Size(107, 64);
+            this.CancelInvoice_Btn.TabIndex = 3;
+            this.CancelInvoice_Btn.Text = "الغاء فاتورة";
+            this.CancelInvoice_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CancelInvoice_Btn.UseVisualStyleBackColor = false;
+            // 
+            // EditInvoice_Btn
+            // 
+            this.EditInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.EditInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditInvoice_Btn.Image = global::SalesSystem.Properties.Resources.close__1_;
+            this.EditInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EditInvoice_Btn.Location = new System.Drawing.Point(3, 213);
+            this.EditInvoice_Btn.Name = "EditInvoice_Btn";
+            this.EditInvoice_Btn.Size = new System.Drawing.Size(107, 64);
+            this.EditInvoice_Btn.TabIndex = 2;
+            this.EditInvoice_Btn.Text = "تعديل فاتورة";
+            this.EditInvoice_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.EditInvoice_Btn.UseVisualStyleBackColor = false;
+            // 
+            // PrintInvoice_Btn
+            // 
+            this.PrintInvoice_Btn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PrintInvoice_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrintInvoice_Btn.Image = global::SalesSystem.Properties.Resources.printer__1_;
+            this.PrintInvoice_Btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PrintInvoice_Btn.Location = new System.Drawing.Point(3, 283);
+            this.PrintInvoice_Btn.Name = "PrintInvoice_Btn";
+            this.PrintInvoice_Btn.Size = new System.Drawing.Size(107, 64);
+            this.PrintInvoice_Btn.TabIndex = 4;
+            this.PrintInvoice_Btn.Text = "طباعة فاتورة";
+            this.PrintInvoice_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.PrintInvoice_Btn.UseVisualStyleBackColor = false;
+            this.PrintInvoice_Btn.Click += new System.EventHandler(this.PrintInvoice_Btn_Click);
             // 
             // MainForm
             // 
