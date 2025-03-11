@@ -19,6 +19,8 @@ namespace SalesSystem
         {
             InitializeComponent();
             LoadCustomFont();
+           
+
         }
 
         private void LoadCustomFont()
@@ -83,6 +85,24 @@ namespace SalesSystem
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Discount_textBox_TextChanged(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void Discount_textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Back)
+            {
+
+                return;
+            }
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+              e.Handled = true;
+            }
         }
     }
 }

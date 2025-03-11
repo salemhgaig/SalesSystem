@@ -59,6 +59,9 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Numric_Textbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="user_managment_form.cs">
       <SubType>Form</SubType>
     </Compile>
