@@ -94,15 +94,24 @@ namespace SalesSystem
 
         private void Discount_textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)Keys.Back)
+            if (e.KeyChar == (char)Keys.Back)
             {
-
                 return;
             }
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+
+            
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
             {
-              e.Handled = true;
+                e.Handled = true;
+                return;
+            }
+
+            
+            if (e.KeyChar == '.' && (Discount_textBox.Text.Contains(".")))
+            {
+                e.Handled = true;
             }
         }
+
     }
 }
