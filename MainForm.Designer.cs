@@ -56,11 +56,11 @@
             this.Discount_textBox = new System.Windows.Forms.TextBox();
             this.Total_textBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.EnterCodeTextBox = new SalesSystem.Numric_Textbox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.ComboBoxSearchProducts = new System.Windows.Forms.ComboBox();
-            this.EnterCodeTextBox = new SalesSystem.Numric_Textbox();
             this.menuStrip.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,18 +70,19 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.الاعداداتToolStripMenuItem,
             this.ادارةالمستخدمينToolStripMenuItem,
             this.ادارةالمنتجاتToolStripMenuItem,
             this.اقفالالحساباتToolStripMenuItem,
-            this.حولالمنظومةToolStripMenuItem,
-            this.قائمةالديونToolStripMenuItem});
+            this.قائمةالديونToolStripMenuItem,
+            this.حولالمنظومةToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip.Size = new System.Drawing.Size(982, 24);
+            this.menuStrip.Size = new System.Drawing.Size(982, 33);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -90,7 +91,7 @@
             this.الاعداداتToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.settings;
             this.الاعداداتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
-            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(116, 29);
             this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
             // 
             // ادارةالمستخدمينToolStripMenuItem
@@ -98,7 +99,7 @@
             this.ادارةالمستخدمينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.profile;
             this.ادارةالمستخدمينToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ادارةالمستخدمينToolStripMenuItem.Name = "ادارةالمستخدمينToolStripMenuItem";
-            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(175, 29);
             this.ادارةالمستخدمينToolStripMenuItem.Text = "ادارة المستخدمين";
             // 
             // ادارةالمنتجاتToolStripMenuItem
@@ -113,42 +114,42 @@
             this.ادارةالمنتجاتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ادارةالمنتجاتToolStripMenuItem.Name = "ادارةالمنتجاتToolStripMenuItem";
             this.ادارةالمنتجاتToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.ادارةالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.ادارةالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(150, 29);
             this.ادارةالمنتجاتToolStripMenuItem.Text = "ادارة المنتجات";
             // 
             // اضافةمنتجToolStripMenuItem
             // 
             this.اضافةمنتجToolStripMenuItem.Name = "اضافةمنتجToolStripMenuItem";
             this.اضافةمنتجToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
             this.اضافةمنتجToolStripMenuItem.Text = "اضافة منتج";
             // 
             // حذفمنتجToolStripMenuItem
             // 
             this.حذفمنتجToolStripMenuItem.Name = "حذفمنتجToolStripMenuItem";
             this.حذفمنتجToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
             this.حذفمنتجToolStripMenuItem.Text = "حذف منتج";
             // 
             // تعديلToolStripMenuItem
             // 
             this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
             this.تعديلToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
             this.تعديلToolStripMenuItem.Text = "تعديل";
             // 
             // عرضالمنتجاتToolStripMenuItem
             // 
             this.عرضالمنتجاتToolStripMenuItem.Name = "عرضالمنتجاتToolStripMenuItem";
             this.عرضالمنتجاتToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
             this.عرضالمنتجاتToolStripMenuItem.Text = "عرض المنتجات";
             // 
             // المنتجاتالتالفةToolStripMenuItem
             // 
             this.المنتجاتالتالفةToolStripMenuItem.Name = "المنتجاتالتالفةToolStripMenuItem";
             this.المنتجاتالتالفةToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
             this.المنتجاتالتالفةToolStripMenuItem.Text = "المنتجات التالفة";
             // 
             // اقفالالحساباتToolStripMenuItem
@@ -156,7 +157,7 @@
             this.اقفالالحساباتToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.invoice;
             this.اقفالالحساباتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.اقفالالحساباتToolStripMenuItem.Name = "اقفالالحساباتToolStripMenuItem";
-            this.اقفالالحساباتToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.اقفالالحساباتToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
             this.اقفالالحساباتToolStripMenuItem.Text = "اقفال الحسابات";
             // 
             // حولالمنظومةToolStripMenuItem
@@ -164,7 +165,7 @@
             this.حولالمنظومةToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.information_button;
             this.حولالمنظومةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.حولالمنظومةToolStripMenuItem.Name = "حولالمنظومةToolStripMenuItem";
-            this.حولالمنظومةToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
+            this.حولالمنظومةToolStripMenuItem.Size = new System.Drawing.Size(153, 29);
             this.حولالمنظومةToolStripMenuItem.Text = "حول المنظومة";
             // 
             // قائمةالديونToolStripMenuItem
@@ -172,7 +173,7 @@
             this.قائمةالديونToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.long_term_debt;
             this.قائمةالديونToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.قائمةالديونToolStripMenuItem.Name = "قائمةالديونToolStripMenuItem";
-            this.قائمةالديونToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.قائمةالديونToolStripMenuItem.Size = new System.Drawing.Size(136, 29);
             this.قائمةالديونToolStripMenuItem.Text = "قائمة الديون";
             // 
             // OperationPanel
@@ -312,7 +313,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(93, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 19);
+            this.label3.Size = new System.Drawing.Size(76, 28);
             this.label3.TabIndex = 5;
             this.label3.Text = "الصافي";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -323,7 +324,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(95, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 19);
+            this.label2.Size = new System.Drawing.Size(68, 28);
             this.label2.TabIndex = 4;
             this.label2.Text = "الخصم";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -334,7 +335,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(89, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 19);
+            this.label1.Size = new System.Drawing.Size(82, 28);
             this.label1.TabIndex = 3;
             this.label1.Text = "الاجمالي";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -389,6 +390,14 @@
             this.panel2.Size = new System.Drawing.Size(979, 148);
             this.panel2.TabIndex = 3;
             // 
+            // EnterCodeTextBox
+            // 
+            this.EnterCodeTextBox.Location = new System.Drawing.Point(688, 59);
+            this.EnterCodeTextBox.Multiline = true;
+            this.EnterCodeTextBox.Name = "EnterCodeTextBox";
+            this.EnterCodeTextBox.Size = new System.Drawing.Size(158, 29);
+            this.EnterCodeTextBox.TabIndex = 4;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -397,7 +406,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(865, 57);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 20);
+            this.label5.Size = new System.Drawing.Size(160, 30);
             this.label5.TabIndex = 10;
             this.label5.Text = "ادخال كود صنف";
             // 
@@ -419,7 +428,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(357, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 19);
+            this.label4.Size = new System.Drawing.Size(133, 28);
             this.label4.TabIndex = 6;
             this.label4.Text = "بحث عن صنف";
             // 
@@ -430,20 +439,12 @@
             this.ComboBoxSearchProducts.Location = new System.Drawing.Point(9, 13);
             this.ComboBoxSearchProducts.Name = "ComboBoxSearchProducts";
             this.ComboBoxSearchProducts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(342, 25);
+            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(342, 36);
             this.ComboBoxSearchProducts.TabIndex = 5;
-            // 
-            // EnterCodeTextBox
-            // 
-            this.EnterCodeTextBox.Location = new System.Drawing.Point(688, 59);
-            this.EnterCodeTextBox.Multiline = true;
-            this.EnterCodeTextBox.Name = "EnterCodeTextBox";
-            this.EnterCodeTextBox.Size = new System.Drawing.Size(158, 29);
-            this.EnterCodeTextBox.TabIndex = 4;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(982, 651);

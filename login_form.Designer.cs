@@ -77,7 +77,7 @@
             this.Title.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.Title.Location = new System.Drawing.Point(148, 24);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(177, 37);
+            this.Title.Size = new System.Drawing.Size(256, 54);
             this.Title.TabIndex = 36;
             this.Title.Text = "تسجيل الدخول";
             // 
@@ -139,7 +139,7 @@
             // 
             // Form_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
