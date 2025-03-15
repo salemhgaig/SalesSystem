@@ -113,5 +113,9 @@ namespace SalesSystem
             }
         }
 
+        private void ادارةالموظفينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
