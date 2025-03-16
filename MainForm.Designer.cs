@@ -30,7 +30,6 @@
         {
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.الاعداداتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ادارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالمنتجاتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اضافةمنتجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حذفمنتجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,9 +38,12 @@
             this.المنتجاتالتالفةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اقفالالحساباتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.قائمةالديونToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ادارةالمستخدمينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ادارةالموظفينToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.حولالمنظومةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.تسجيلالدخولوالخروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.الدخولبمستخدماخرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.تسجيلخروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OperationPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.NewInvoice_Btn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,9 +57,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
+            this.ItemQuantityBack_TextBox = new SalesSystem.Numric_Textbox();
+            this.invoiceNumber_TextBox = new SalesSystem.Numric_Textbox();
             this.label6 = new System.Windows.Forms.Label();
+            this.ItemQuantity_TextBox = new SalesSystem.Numric_Textbox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.QuantityToSell_TextBox = new SalesSystem.Numric_Textbox();
+            this.EnterCodeTextBox = new SalesSystem.Numric_Textbox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -71,27 +78,19 @@
             this.Net_textBox = new System.Windows.Forms.TextBox();
             this.Discount_textBox = new System.Windows.Forms.TextBox();
             this.Total_textBox = new System.Windows.Forms.TextBox();
-            this.DG_Salestable = new System.Windows.Forms.DataGridView();
+            this.SalesGrid = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.الدخولبمستخدماخرToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.تسجيلخروجToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ItemQuantityBack_TextBox = new SalesSystem.Numric_Textbox();
-            this.invoiceNumber_TextBox = new SalesSystem.Numric_Textbox();
-            this.ItemQuantity_TextBox = new SalesSystem.Numric_Textbox();
-            this.QuantityToSell_TextBox = new SalesSystem.Numric_Textbox();
-            this.EnterCodeTextBox = new SalesSystem.Numric_Textbox();
             this.menuStrip.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DG_Salestable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -122,15 +121,6 @@
             this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
             this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
-            // 
-            // ادارةالمستخدمينToolStripMenuItem
-            // 
-            this.ادارةالمستخدمينToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ادارةالمستخدمينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.profile;
-            this.ادارةالمستخدمينToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.ادارةالمستخدمينToolStripMenuItem.Name = "ادارةالمستخدمينToolStripMenuItem";
-            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
-            this.ادارةالمستخدمينToolStripMenuItem.Text = "ادارة المستخدمين";
             // 
             // ادارةالمنتجاتToolStripMenuItem
             // 
@@ -201,6 +191,15 @@
             this.قائمةالديونToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.قائمةالديونToolStripMenuItem.Text = "قائمة الديون";
             // 
+            // ادارةالمستخدمينToolStripMenuItem
+            // 
+            this.ادارةالمستخدمينToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ادارةالمستخدمينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.profile;
+            this.ادارةالمستخدمينToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.ادارةالمستخدمينToolStripMenuItem.Name = "ادارةالمستخدمينToolStripMenuItem";
+            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.ادارةالمستخدمينToolStripMenuItem.Text = "ادارة المستخدمين";
+            // 
             // ادارةالموظفينToolStripMenuItem
             // 
             this.ادارةالموظفينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.manager;
@@ -229,6 +228,18 @@
             this.تسجيلالدخولوالخروجToolStripMenuItem.Name = "تسجيلالدخولوالخروجToolStripMenuItem";
             this.تسجيلالدخولوالخروجToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
             this.تسجيلالدخولوالخروجToolStripMenuItem.Text = "تسجيل الدخول والخروج";
+            // 
+            // الدخولبمستخدماخرToolStripMenuItem
+            // 
+            this.الدخولبمستخدماخرToolStripMenuItem.Name = "الدخولبمستخدماخرToolStripMenuItem";
+            this.الدخولبمستخدماخرToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.الدخولبمستخدماخرToolStripMenuItem.Text = "الدخول بمستخدم اخر";
+            // 
+            // تسجيلخروجToolStripMenuItem
+            // 
+            this.تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem";
+            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج";
             // 
             // OperationPanel
             // 
@@ -414,6 +425,23 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "الكمية الموجودة بعد البيع";
             // 
+            // ItemQuantityBack_TextBox
+            // 
+            this.ItemQuantityBack_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.ItemQuantityBack_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemQuantityBack_TextBox.ForeColor = System.Drawing.Color.Lime;
+            this.ItemQuantityBack_TextBox.Location = new System.Drawing.Point(7, 99);
+            this.ItemQuantityBack_TextBox.Name = "ItemQuantityBack_TextBox";
+            this.ItemQuantityBack_TextBox.Size = new System.Drawing.Size(68, 23);
+            this.ItemQuantityBack_TextBox.TabIndex = 21;
+            // 
+            // invoiceNumber_TextBox
+            // 
+            this.invoiceNumber_TextBox.Location = new System.Drawing.Point(3, 13);
+            this.invoiceNumber_TextBox.Name = "invoiceNumber_TextBox";
+            this.invoiceNumber_TextBox.Size = new System.Drawing.Size(107, 22);
+            this.invoiceNumber_TextBox.TabIndex = 17;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -423,6 +451,16 @@
             this.label6.Size = new System.Drawing.Size(63, 15);
             this.label6.TabIndex = 18;
             this.label6.Text = "رقم الفاتورة";
+            // 
+            // ItemQuantity_TextBox
+            // 
+            this.ItemQuantity_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.ItemQuantity_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemQuantity_TextBox.ForeColor = System.Drawing.Color.Lime;
+            this.ItemQuantity_TextBox.Location = new System.Drawing.Point(7, 55);
+            this.ItemQuantity_TextBox.Name = "ItemQuantity_TextBox";
+            this.ItemQuantity_TextBox.Size = new System.Drawing.Size(68, 23);
+            this.ItemQuantity_TextBox.TabIndex = 19;
             // 
             // label7
             // 
@@ -444,6 +482,27 @@
             this.label8.Size = new System.Drawing.Size(45, 19);
             this.label8.TabIndex = 16;
             this.label8.Text = "الكمية";
+            // 
+            // QuantityToSell_TextBox
+            // 
+            this.QuantityToSell_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.QuantityToSell_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.QuantityToSell_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityToSell_TextBox.ForeColor = System.Drawing.Color.Yellow;
+            this.QuantityToSell_TextBox.Location = new System.Drawing.Point(409, 29);
+            this.QuantityToSell_TextBox.Multiline = true;
+            this.QuantityToSell_TextBox.Name = "QuantityToSell_TextBox";
+            this.QuantityToSell_TextBox.Size = new System.Drawing.Size(62, 38);
+            this.QuantityToSell_TextBox.TabIndex = 15;
+            // 
+            // EnterCodeTextBox
+            // 
+            this.EnterCodeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.EnterCodeTextBox.Location = new System.Drawing.Point(775, 59);
+            this.EnterCodeTextBox.Multiline = true;
+            this.EnterCodeTextBox.Name = "EnterCodeTextBox";
+            this.EnterCodeTextBox.Size = new System.Drawing.Size(158, 29);
+            this.EnterCodeTextBox.TabIndex = 4;
             // 
             // label5
             // 
@@ -595,127 +654,52 @@
             this.Total_textBox.TabIndex = 0;
             this.Total_textBox.Text = "0.0";
             // 
-            // DG_Salestable
+            // SalesGrid
             // 
-            this.DG_Salestable.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SalesGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DG_Salestable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.DG_Salestable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DG_Salestable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SalesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SalesGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6});
-            this.DG_Salestable.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DG_Salestable.Location = new System.Drawing.Point(138, 168);
-            this.DG_Salestable.Name = "DG_Salestable";
-            this.DG_Salestable.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.DG_Salestable.RowHeadersWidth = 62;
-            this.DG_Salestable.RowTemplate.Height = 29;
-            this.DG_Salestable.Size = new System.Drawing.Size(931, 342);
-            this.DG_Salestable.TabIndex = 6;
+            this.Column5});
+            this.SalesGrid.Location = new System.Drawing.Point(122, 158);
+            this.SalesGrid.Name = "SalesGrid";
+            this.SalesGrid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SalesGrid.Size = new System.Drawing.Size(944, 352);
+            this.SalesGrid.TabIndex = 6;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column1.HeaderText = "الصنف";
-            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "الكمية";
-            this.Column2.MinimumWidth = 8;
+            this.Column2.HeaderText = "السعر";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.HeaderText = "السعر";
-            this.Column3.MinimumWidth = 8;
+            this.Column3.HeaderText = "الكمية";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.HeaderText = "المجموع";
-            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "الصلاحية";
-            this.Column5.MinimumWidth = 8;
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.HeaderText = "تاريخ وقت التنزيل";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.HeaderText = "وقت التنزيل";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            // 
-            // الدخولبمستخدماخرToolStripMenuItem
-            // 
-            this.الدخولبمستخدماخرToolStripMenuItem.Name = "الدخولبمستخدماخرToolStripMenuItem";
-            this.الدخولبمستخدماخرToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.الدخولبمستخدماخرToolStripMenuItem.Text = "الدخول بمستخدم اخر";
-            // 
-            // تسجيلخروجToolStripMenuItem
-            // 
-            this.تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem";
-            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج";
-            // 
-            // ItemQuantityBack_TextBox
-            // 
-            this.ItemQuantityBack_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.ItemQuantityBack_TextBox.ForeColor = System.Drawing.Color.Lime;
-            this.ItemQuantityBack_TextBox.Location = new System.Drawing.Point(7, 99);
-            this.ItemQuantityBack_TextBox.Name = "ItemQuantityBack_TextBox";
-            this.ItemQuantityBack_TextBox.Size = new System.Drawing.Size(68, 22);
-            this.ItemQuantityBack_TextBox.TabIndex = 21;
-            // 
-            // invoiceNumber_TextBox
-            // 
-            this.invoiceNumber_TextBox.Location = new System.Drawing.Point(3, 13);
-            this.invoiceNumber_TextBox.Name = "invoiceNumber_TextBox";
-            this.invoiceNumber_TextBox.Size = new System.Drawing.Size(107, 22);
-            this.invoiceNumber_TextBox.TabIndex = 17;
-            // 
-            // ItemQuantity_TextBox
-            // 
-            this.ItemQuantity_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.ItemQuantity_TextBox.ForeColor = System.Drawing.Color.Lime;
-            this.ItemQuantity_TextBox.Location = new System.Drawing.Point(7, 55);
-            this.ItemQuantity_TextBox.Name = "ItemQuantity_TextBox";
-            this.ItemQuantity_TextBox.Size = new System.Drawing.Size(68, 22);
-            this.ItemQuantity_TextBox.TabIndex = 19;
-            // 
-            // QuantityToSell_TextBox
-            // 
-            this.QuantityToSell_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.QuantityToSell_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.QuantityToSell_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityToSell_TextBox.ForeColor = System.Drawing.Color.Yellow;
-            this.QuantityToSell_TextBox.Location = new System.Drawing.Point(409, 29);
-            this.QuantityToSell_TextBox.Multiline = true;
-            this.QuantityToSell_TextBox.Name = "QuantityToSell_TextBox";
-            this.QuantityToSell_TextBox.Size = new System.Drawing.Size(62, 38);
-            this.QuantityToSell_TextBox.TabIndex = 15;
-            // 
-            // EnterCodeTextBox
-            // 
-            this.EnterCodeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.EnterCodeTextBox.Location = new System.Drawing.Point(775, 59);
-            this.EnterCodeTextBox.Multiline = true;
-            this.EnterCodeTextBox.Name = "EnterCodeTextBox";
-            this.EnterCodeTextBox.Size = new System.Drawing.Size(158, 29);
-            this.EnterCodeTextBox.TabIndex = 4;
             // 
             // MainForm
             // 
@@ -723,7 +707,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1069, 610);
-            this.Controls.Add(this.DG_Salestable);
+            this.Controls.Add(this.SalesGrid);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.OperationPanel);
@@ -746,7 +730,7 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DG_Salestable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SalesGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -794,13 +778,6 @@
         private System.Windows.Forms.TextBox Net_textBox;
         private System.Windows.Forms.TextBox Discount_textBox;
         private System.Windows.Forms.TextBox Total_textBox;
-        private System.Windows.Forms.DataGridView DG_Salestable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button DeleteItem_Btn;
         private System.Windows.Forms.Button SaveInvoice_Btn;
@@ -811,5 +788,12 @@
         private System.Windows.Forms.ToolStripMenuItem تسجيلالدخولوالخروجToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem الدخولبمستخدماخرToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تسجيلخروجToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
+        private System.Windows.Forms.DataGridView SalesGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }
