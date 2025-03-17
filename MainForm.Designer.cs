@@ -788,7 +788,6 @@
         private System.Windows.Forms.ToolStripMenuItem تسجيلالدخولوالخروجToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem الدخولبمستخدماخرToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem تسجيلخروجToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
         private System.Windows.Forms.DataGridView SalesGrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
