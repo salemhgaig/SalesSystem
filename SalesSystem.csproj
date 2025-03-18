@@ -39,6 +39,18 @@
     <Compile Include="AddItem_Form.Designer.cs">
       <DependentUpon>AddItem_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteItem_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteItem_Form.Designer.cs">
+      <DependentUpon>DeleteItem_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditItem_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditItem_Form.Designer.cs">
+      <DependentUpon>EditItem_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="login_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,8 +75,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
+    <Compile Include="ViewItems_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewItems_Form.Designer.cs">
+      <DependentUpon>ViewItems_Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddItem_Form.resx">
       <DependentUpon>AddItem_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteItem_Form.resx">
+      <DependentUpon>DeleteItem_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditItem_Form.resx">
+      <DependentUpon>EditItem_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
@@ -86,6 +110,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewItems_Form.resx">
+      <DependentUpon>ViewItems_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

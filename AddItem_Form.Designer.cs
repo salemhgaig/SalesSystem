@@ -39,7 +39,7 @@
             this.numericUpDown_Quantity = new System.Windows.Forms.NumericUpDown();
             this.Textbox_ItemCode = new SalesSystem.Numric_Textbox();
             this.Button_Add = new System.Windows.Forms.Button();
-            this.button_cancel = new System.Windows.Forms.Button();
+            this.Button_Cancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Quantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,24 +141,24 @@
             this.Button_Add.Text = "اضافة";
             this.Button_Add.UseVisualStyleBackColor = false;
             // 
-            // button_cancel
+            // Button_Cancel
             // 
-            this.button_cancel.BackColor = System.Drawing.Color.Red;
-            this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_cancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_cancel.Location = new System.Drawing.Point(54, 333);
-            this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(75, 42);
-            this.button_cancel.TabIndex = 15;
-            this.button_cancel.Text = "الغاء";
-            this.button_cancel.UseVisualStyleBackColor = false;
+            this.Button_Cancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.Button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Button_Cancel.Location = new System.Drawing.Point(85, 333);
+            this.Button_Cancel.Name = "Button_Cancel";
+            this.Button_Cancel.Size = new System.Drawing.Size(75, 42);
+            this.Button_Cancel.TabIndex = 19;
+            this.Button_Cancel.Text = "الغاء";
+            this.Button_Cancel.UseVisualStyleBackColor = false;
             // 
             // AddItem_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(375, 381);
-            this.Controls.Add(this.button_cancel);
+            this.Controls.Add(this.Button_Cancel);
             this.Controls.Add(this.Button_Add);
             this.Controls.Add(this.Textbox_ItemCode);
             this.Controls.Add(this.numericUpDown_Quantity);
@@ -194,6 +194,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_Quantity;
         private Numric_Textbox Textbox_ItemCode;
         private System.Windows.Forms.Button Button_Add;
-        private System.Windows.Forms.Button button_cancel;
+        private System.Windows.Forms.Button Button_Cancel;
     }
 }
