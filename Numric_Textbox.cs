@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace SalesSystem
 {
-    internal class Numric_Textbox:TextBox
+    internal class Numric_Textbox : TextBox
     {
-   public   Numric_Textbox(): base()
+        public Numric_Textbox() : base()
         {
             KeyPress += Numric_TextBox_Keypress;
         }
