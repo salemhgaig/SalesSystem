@@ -125,7 +125,8 @@ namespace SalesSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Fmimpure F= new Fmimpure();
+            F.ShowDialog();
         }
     }
 }

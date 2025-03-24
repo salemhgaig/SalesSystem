@@ -16,7 +16,7 @@ namespace SalesSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fm_Debts() ) ;
+            Application.Run(new MainForm() ) ;
         }
     }
 }

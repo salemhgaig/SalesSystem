@@ -16,5 +16,15 @@ namespace SalesSystem
         {
             InitializeComponent();
         }
+
+        private void Button_Add_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Button_Cancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

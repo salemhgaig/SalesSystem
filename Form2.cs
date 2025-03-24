@@ -10,31 +10,16 @@ using System.Windows.Forms;
 
 namespace SalesSystem
 {
-    public partial class Fm_Debts : Form
+    public partial class Fmimpure : Form
     {
-        public Fm_Debts()
+        public Fmimpure()
         {
             InitializeComponent();
         }
 
-     
-
-       
-
-        private void Fm_Debts_Load(object sender, EventArgs e)
+        private void btnsave_Click(object sender, EventArgs e)
         {
-           
+        
         }
-
-      
-
-     
-        private void btn_cancellation_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-       
     }
-
 }

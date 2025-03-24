@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.SalesGrid = new System.Windows.Forms.DataGridView();
-            this.Button_Cancel = new System.Windows.Forms.Button();
-            this.Button_Add = new System.Windows.Forms.Button();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PurchaseCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SellingPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Button_Cancel = new System.Windows.Forms.Button();
+            this.Button_Add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SalesGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,12 +54,49 @@
             this.SalesGrid.Location = new System.Drawing.Point(3, -1);
             this.SalesGrid.Name = "SalesGrid";
             this.SalesGrid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SalesGrid.RowHeadersWidth = 62;
             this.SalesGrid.Size = new System.Drawing.Size(798, 352);
             this.SalesGrid.TabIndex = 7;
+            // 
+            // ItemName
+            // 
+            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ItemName.HeaderText = "اسم الصنف";
+            this.ItemName.MinimumWidth = 8;
+            this.ItemName.Name = "ItemName";
+            // 
+            // ItemCode
+            // 
+            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ItemCode.HeaderText = "كود الصنف";
+            this.ItemCode.MinimumWidth = 8;
+            this.ItemCode.Name = "ItemCode";
+            // 
+            // Quantity
+            // 
+            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Quantity.HeaderText = "الكمية";
+            this.Quantity.MinimumWidth = 8;
+            this.Quantity.Name = "Quantity";
+            // 
+            // PurchaseCost
+            // 
+            this.PurchaseCost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PurchaseCost.HeaderText = "تكلفة الشراء";
+            this.PurchaseCost.MinimumWidth = 8;
+            this.PurchaseCost.Name = "PurchaseCost";
+            // 
+            // SellingPrice
+            // 
+            this.SellingPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SellingPrice.HeaderText = "سعر البيع";
+            this.SellingPrice.MinimumWidth = 8;
+            this.SellingPrice.Name = "SellingPrice";
             // 
             // Button_Cancel
             // 
             this.Button_Cancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.Button_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Button_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Button_Cancel.Location = new System.Drawing.Point(557, 357);
@@ -68,6 +105,7 @@
             this.Button_Cancel.TabIndex = 27;
             this.Button_Cancel.Text = "الغاء";
             this.Button_Cancel.UseVisualStyleBackColor = false;
+            this.Button_Cancel.Click += new System.EventHandler(this.Button_Cancel_Click);
             // 
             // Button_Add
             // 
@@ -80,40 +118,11 @@
             this.Button_Add.TabIndex = 26;
             this.Button_Add.Text = "حفظ";
             this.Button_Add.UseVisualStyleBackColor = false;
-            // 
-            // ItemName
-            // 
-            this.ItemName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ItemName.HeaderText = "اسم الصنف";
-            this.ItemName.Name = "ItemName";
-            // 
-            // ItemCode
-            // 
-            this.ItemCode.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ItemCode.HeaderText = "كود الصنف";
-            this.ItemCode.Name = "ItemCode";
-            // 
-            // Quantity
-            // 
-            this.Quantity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Quantity.HeaderText = "الكمية";
-            this.Quantity.Name = "Quantity";
-            // 
-            // PurchaseCost
-            // 
-            this.PurchaseCost.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PurchaseCost.HeaderText = "تكلفة الشراء";
-            this.PurchaseCost.Name = "PurchaseCost";
-            // 
-            // SellingPrice
-            // 
-            this.SellingPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SellingPrice.HeaderText = "سعر البيع";
-            this.SellingPrice.Name = "SellingPrice";
+            this.Button_Add.Click += new System.EventHandler(this.Button_Add_Click);
             // 
             // ViewItems_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Button_Cancel);
