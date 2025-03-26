@@ -54,16 +54,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.PrintInvoice_Btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label9 = new System.Windows.Forms.Label();
-            this.ItemQuantityBack_TextBox = new SalesSystem.Numric_Textbox();
             this.invoiceNumber_TextBox = new SalesSystem.Numric_Textbox();
             this.label6 = new System.Windows.Forms.Label();
-            this.ItemQuantity_TextBox = new SalesSystem.Numric_Textbox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.QuantityToSell_TextBox = new SalesSystem.Numric_Textbox();
             this.EnterCodeTextBox = new SalesSystem.Numric_Textbox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -84,19 +76,26 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.QuantityToSell_TextBox = new SalesSystem.Numric_Textbox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ItemQuantity_TextBox = new SalesSystem.Numric_Textbox();
+            this.ItemQuantityBack_TextBox = new SalesSystem.Numric_Textbox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
             this.menuStrip.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SalesGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
             this.menuStrip.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.الاعداداتToolStripMenuItem,
@@ -110,7 +109,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip.Size = new System.Drawing.Size(1236, 33);
+            this.menuStrip.Size = new System.Drawing.Size(1236, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -120,7 +119,7 @@
             this.الاعداداتToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.settings;
             this.الاعداداتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.الاعداداتToolStripMenuItem.Name = "الاعداداتToolStripMenuItem";
-            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(116, 29);
+            this.الاعداداتToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.الاعداداتToolStripMenuItem.Text = "الاعدادات";
             // 
             // ادارةالمنتجاتToolStripMenuItem
@@ -136,42 +135,42 @@
             this.ادارةالمنتجاتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ادارةالمنتجاتToolStripMenuItem.Name = "ادارةالمنتجاتToolStripMenuItem";
             this.ادارةالمنتجاتToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.ادارةالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(150, 29);
+            this.ادارةالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
             this.ادارةالمنتجاتToolStripMenuItem.Text = "ادارة المنتجات";
             // 
             // اضافةمنتجToolStripMenuItem
             // 
             this.اضافةمنتجToolStripMenuItem.Name = "اضافةمنتجToolStripMenuItem";
             this.اضافةمنتجToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.اضافةمنتجToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.اضافةمنتجToolStripMenuItem.Text = "اضافة منتج";
             // 
             // حذفمنتجToolStripMenuItem
             // 
             this.حذفمنتجToolStripMenuItem.Name = "حذفمنتجToolStripMenuItem";
             this.حذفمنتجToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.حذفمنتجToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.حذفمنتجToolStripMenuItem.Text = "حذف منتج";
             // 
             // تعديلToolStripMenuItem
             // 
             this.تعديلToolStripMenuItem.Name = "تعديلToolStripMenuItem";
             this.تعديلToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.تعديلToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.تعديلToolStripMenuItem.Text = "تعديل";
             // 
             // عرضالمنتجاتToolStripMenuItem
             // 
             this.عرضالمنتجاتToolStripMenuItem.Name = "عرضالمنتجاتToolStripMenuItem";
             this.عرضالمنتجاتToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.عرضالمنتجاتToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.عرضالمنتجاتToolStripMenuItem.Text = "عرض المنتجات";
             // 
             // المنتجاتالتالفةToolStripMenuItem
             // 
             this.المنتجاتالتالفةToolStripMenuItem.Name = "المنتجاتالتالفةToolStripMenuItem";
             this.المنتجاتالتالفةToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(292, 34);
+            this.المنتجاتالتالفةToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.المنتجاتالتالفةToolStripMenuItem.Text = "المنتجات التالفة";
             // 
             // اقفالالحساباتToolStripMenuItem
@@ -180,7 +179,7 @@
             this.اقفالالحساباتToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.invoice;
             this.اقفالالحساباتToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.اقفالالحساباتToolStripMenuItem.Name = "اقفالالحساباتToolStripMenuItem";
-            this.اقفالالحساباتToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.اقفالالحساباتToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.اقفالالحساباتToolStripMenuItem.Text = "اقفال الحسابات";
             // 
             // قائمةالديونToolStripMenuItem
@@ -189,7 +188,7 @@
             this.قائمةالديونToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.long_term_debt;
             this.قائمةالديونToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.قائمةالديونToolStripMenuItem.Name = "قائمةالديونToolStripMenuItem";
-            this.قائمةالديونToolStripMenuItem.Size = new System.Drawing.Size(136, 29);
+            this.قائمةالديونToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.قائمةالديونToolStripMenuItem.Text = "قائمة الديون";
             this.قائمةالديونToolStripMenuItem.Click += new System.EventHandler(this.قائمةالديونToolStripMenuItem_Click);
             // 
@@ -199,7 +198,7 @@
             this.ادارةالمستخدمينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.profile;
             this.ادارةالمستخدمينToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ادارةالمستخدمينToolStripMenuItem.Name = "ادارةالمستخدمينToolStripMenuItem";
-            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(175, 29);
+            this.ادارةالمستخدمينToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
             this.ادارةالمستخدمينToolStripMenuItem.Text = "ادارة المستخدمين";
             // 
             // ادارةالموظفينToolStripMenuItem
@@ -207,7 +206,7 @@
             this.ادارةالموظفينToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.manager;
             this.ادارةالموظفينToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.ادارةالموظفينToolStripMenuItem.Name = "ادارةالموظفينToolStripMenuItem";
-            this.ادارةالموظفينToolStripMenuItem.Size = new System.Drawing.Size(156, 29);
+            this.ادارةالموظفينToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.ادارةالموظفينToolStripMenuItem.Text = "ادارة الموظفين";
             this.ادارةالموظفينToolStripMenuItem.Click += new System.EventHandler(this.ادارةالموظفينToolStripMenuItem_Click);
             // 
@@ -217,7 +216,7 @@
             this.حولالمنظومةToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.information_button;
             this.حولالمنظومةToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.حولالمنظومةToolStripMenuItem.Name = "حولالمنظومةToolStripMenuItem";
-            this.حولالمنظومةToolStripMenuItem.Size = new System.Drawing.Size(153, 29);
+            this.حولالمنظومةToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.حولالمنظومةToolStripMenuItem.Text = "حول المنظومة";
             // 
             // تسجيلالدخولوالخروجToolStripMenuItem
@@ -228,19 +227,19 @@
             this.تسجيلالدخولوالخروجToolStripMenuItem.Image = global::SalesSystem.Properties.Resources.arrow;
             this.تسجيلالدخولوالخروجToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.تسجيلالدخولوالخروجToolStripMenuItem.Name = "تسجيلالدخولوالخروجToolStripMenuItem";
-            this.تسجيلالدخولوالخروجToolStripMenuItem.Size = new System.Drawing.Size(215, 29);
+            this.تسجيلالدخولوالخروجToolStripMenuItem.Size = new System.Drawing.Size(146, 20);
             this.تسجيلالدخولوالخروجToolStripMenuItem.Text = "تسجيل الدخول والخروج";
             // 
             // الدخولبمستخدماخرToolStripMenuItem
             // 
             this.الدخولبمستخدماخرToolStripMenuItem.Name = "الدخولبمستخدماخرToolStripMenuItem";
-            this.الدخولبمستخدماخرToolStripMenuItem.Size = new System.Drawing.Size(269, 34);
+            this.الدخولبمستخدماخرToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.الدخولبمستخدماخرToolStripMenuItem.Text = "الدخول بمستخدم اخر";
             // 
             // تسجيلخروجToolStripMenuItem
             // 
             this.تسجيلخروجToolStripMenuItem.Name = "تسجيلخروجToolStripMenuItem";
-            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(269, 34);
+            this.تسجيلخروجToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.تسجيلخروجToolStripMenuItem.Text = "تسجيل خروج";
             // 
             // OperationPanel
@@ -397,52 +396,11 @@
             this.panel2.Size = new System.Drawing.Size(1233, 125);
             this.panel2.TabIndex = 3;
             // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(591, 83);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 28);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "السعر";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.numericUpDown1.Enabled = false;
-            this.numericUpDown1.Location = new System.Drawing.Point(471, 81);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDown1.Size = new System.Drawing.Size(103, 29);
-            this.numericUpDown1.TabIndex = 23;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(92, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(202, 25);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "الكمية الموجودة بعد البيع";
-            // 
-            // ItemQuantityBack_TextBox
-            // 
-            this.ItemQuantityBack_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.ItemQuantityBack_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemQuantityBack_TextBox.ForeColor = System.Drawing.Color.Lime;
-            this.ItemQuantityBack_TextBox.Location = new System.Drawing.Point(7, 99);
-            this.ItemQuantityBack_TextBox.Name = "ItemQuantityBack_TextBox";
-            this.ItemQuantityBack_TextBox.Size = new System.Drawing.Size(68, 31);
-            this.ItemQuantityBack_TextBox.TabIndex = 21;
-            // 
             // invoiceNumber_TextBox
             // 
             this.invoiceNumber_TextBox.Location = new System.Drawing.Point(3, 13);
             this.invoiceNumber_TextBox.Name = "invoiceNumber_TextBox";
-            this.invoiceNumber_TextBox.Size = new System.Drawing.Size(107, 29);
+            this.invoiceNumber_TextBox.Size = new System.Drawing.Size(107, 22);
             this.invoiceNumber_TextBox.TabIndex = 17;
             // 
             // label6
@@ -451,52 +409,9 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(116, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 25);
+            this.label6.Size = new System.Drawing.Size(63, 15);
             this.label6.TabIndex = 18;
             this.label6.Text = "رقم الفاتورة";
-            // 
-            // ItemQuantity_TextBox
-            // 
-            this.ItemQuantity_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.ItemQuantity_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemQuantity_TextBox.ForeColor = System.Drawing.Color.Lime;
-            this.ItemQuantity_TextBox.Location = new System.Drawing.Point(7, 55);
-            this.ItemQuantity_TextBox.Name = "ItemQuantity_TextBox";
-            this.ItemQuantity_TextBox.Size = new System.Drawing.Size(68, 31);
-            this.ItemQuantity_TextBox.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(81, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(199, 25);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "الكمية الموجودة فالمخزن";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(571, 35);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 28);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "الكمية";
-            // 
-            // QuantityToSell_TextBox
-            // 
-            this.QuantityToSell_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.QuantityToSell_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
-            this.QuantityToSell_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityToSell_TextBox.ForeColor = System.Drawing.Color.Yellow;
-            this.QuantityToSell_TextBox.Location = new System.Drawing.Point(492, 29);
-            this.QuantityToSell_TextBox.Multiline = true;
-            this.QuantityToSell_TextBox.Name = "QuantityToSell_TextBox";
-            this.QuantityToSell_TextBox.Size = new System.Drawing.Size(62, 38);
-            this.QuantityToSell_TextBox.TabIndex = 15;
             // 
             // EnterCodeTextBox
             // 
@@ -516,7 +431,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(1119, 57);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 30);
+            this.label5.Size = new System.Drawing.Size(111, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "ادخال كود صنف";
             // 
@@ -539,7 +454,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(357, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 28);
+            this.label4.Size = new System.Drawing.Size(93, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "بحث عن صنف";
             // 
@@ -550,7 +465,7 @@
             this.ComboBoxSearchProducts.Location = new System.Drawing.Point(9, 13);
             this.ComboBoxSearchProducts.Name = "ComboBoxSearchProducts";
             this.ComboBoxSearchProducts.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(342, 36);
+            this.ComboBoxSearchProducts.Size = new System.Drawing.Size(342, 25);
             this.ComboBoxSearchProducts.TabIndex = 5;
             // 
             // panel1
@@ -578,7 +493,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(699, 72);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(141, 21);
+            this.label11.Size = new System.Drawing.Size(102, 13);
             this.label11.TabIndex = 9;
             this.label11.Text = "ملاحظة على الفاتورة";
             // 
@@ -587,7 +502,7 @@
             this.Note_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Note_TextBox.Location = new System.Drawing.Point(448, 66);
             this.Note_TextBox.Name = "Note_TextBox";
-            this.Note_TextBox.Size = new System.Drawing.Size(245, 29);
+            this.Note_TextBox.Size = new System.Drawing.Size(245, 22);
             this.Note_TextBox.TabIndex = 8;
             // 
             // label3
@@ -596,7 +511,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(122, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 28);
+            this.label3.Size = new System.Drawing.Size(55, 19);
             this.label3.TabIndex = 5;
             this.label3.Text = "الصافي";
             // 
@@ -606,7 +521,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(122, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 28);
+            this.label2.Size = new System.Drawing.Size(48, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "الخصم";
             // 
@@ -616,7 +531,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(118, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 28);
+            this.label1.Size = new System.Drawing.Size(59, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "الاجمالي";
             // 
@@ -710,9 +625,93 @@
             this.Column5.MinimumWidth = 8;
             this.Column5.Name = "Column5";
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(571, 35);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 19);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "الكمية";
+            // 
+            // QuantityToSell_TextBox
+            // 
+            this.QuantityToSell_TextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.QuantityToSell_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.QuantityToSell_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityToSell_TextBox.ForeColor = System.Drawing.Color.Yellow;
+            this.QuantityToSell_TextBox.Location = new System.Drawing.Point(492, 29);
+            this.QuantityToSell_TextBox.Multiline = true;
+            this.QuantityToSell_TextBox.Name = "QuantityToSell_TextBox";
+            this.QuantityToSell_TextBox.Size = new System.Drawing.Size(62, 38);
+            this.QuantityToSell_TextBox.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(81, 59);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(128, 15);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "الكمية الموجودة فالمخزن";
+            // 
+            // ItemQuantity_TextBox
+            // 
+            this.ItemQuantity_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.ItemQuantity_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemQuantity_TextBox.ForeColor = System.Drawing.Color.Lime;
+            this.ItemQuantity_TextBox.Location = new System.Drawing.Point(7, 55);
+            this.ItemQuantity_TextBox.Name = "ItemQuantity_TextBox";
+            this.ItemQuantity_TextBox.Size = new System.Drawing.Size(68, 23);
+            this.ItemQuantity_TextBox.TabIndex = 19;
+            // 
+            // ItemQuantityBack_TextBox
+            // 
+            this.ItemQuantityBack_TextBox.BackColor = System.Drawing.SystemColors.InfoText;
+            this.ItemQuantityBack_TextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemQuantityBack_TextBox.ForeColor = System.Drawing.Color.Lime;
+            this.ItemQuantityBack_TextBox.Location = new System.Drawing.Point(7, 99);
+            this.ItemQuantityBack_TextBox.Name = "ItemQuantityBack_TextBox";
+            this.ItemQuantityBack_TextBox.Size = new System.Drawing.Size(68, 23);
+            this.ItemQuantityBack_TextBox.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(92, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(130, 15);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "الكمية الموجودة بعد البيع";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.numericUpDown1.Enabled = false;
+            this.numericUpDown1.Location = new System.Drawing.Point(471, 81);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numericUpDown1.Size = new System.Drawing.Size(103, 22);
+            this.numericUpDown1.TabIndex = 23;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(591, 83);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 19);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "السعر";
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1236, 610);
@@ -734,12 +733,12 @@
             this.OperationPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SalesGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -767,16 +766,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox ComboBoxSearchProducts;
         private Numric_Textbox EnterCodeTextBox;
-        private System.Windows.Forms.Label label8;
-        private Numric_Textbox QuantityToSell_TextBox;
         private Numric_Textbox invoiceNumber_TextBox;
         private System.Windows.Forms.Label label6;
-        private Numric_Textbox ItemQuantity_TextBox;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label9;
-        private Numric_Textbox ItemQuantityBack_TextBox;
         private System.Windows.Forms.ToolStripMenuItem ادارةالموظفينToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
@@ -803,5 +794,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label9;
+        private Numric_Textbox ItemQuantityBack_TextBox;
+        private Numric_Textbox ItemQuantity_TextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private Numric_Textbox QuantityToSell_TextBox;
     }
 }

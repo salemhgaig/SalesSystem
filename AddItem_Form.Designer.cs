@@ -48,7 +48,7 @@
             this.textBox_ItemName.Location = new System.Drawing.Point(37, 14);
             this.textBox_ItemName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_ItemName.Name = "textBox_ItemName";
-            this.textBox_ItemName.Size = new System.Drawing.Size(210, 37);
+            this.textBox_ItemName.Size = new System.Drawing.Size(210, 27);
             this.textBox_ItemName.TabIndex = 0;
             // 
             // label1
@@ -57,7 +57,7 @@
             this.label1.Location = new System.Drawing.Point(279, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 31);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "اسم الصنف";
             // 
@@ -67,7 +67,7 @@
             this.label2.Location = new System.Drawing.Point(287, 88);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 31);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "كود الصنف";
             // 
@@ -77,7 +77,7 @@
             this.label3.Location = new System.Drawing.Point(286, 155);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 31);
+            this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "الكمية";
             // 
@@ -87,7 +87,7 @@
             this.label4.Location = new System.Drawing.Point(286, 222);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 31);
+            this.label4.Size = new System.Drawing.Size(82, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "تكلفة الشراء";
             // 
@@ -97,7 +97,7 @@
             this.label5.Location = new System.Drawing.Point(286, 288);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 31);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "سعر البيع";
             // 
@@ -105,28 +105,28 @@
             // 
             this.Textbox_PurchaseCost.Location = new System.Drawing.Point(147, 222);
             this.Textbox_PurchaseCost.Name = "Textbox_PurchaseCost";
-            this.Textbox_PurchaseCost.Size = new System.Drawing.Size(100, 37);
+            this.Textbox_PurchaseCost.Size = new System.Drawing.Size(100, 27);
             this.Textbox_PurchaseCost.TabIndex = 10;
             // 
             // Textbox_sellingPrice
             // 
             this.Textbox_sellingPrice.Location = new System.Drawing.Point(147, 281);
             this.Textbox_sellingPrice.Name = "Textbox_sellingPrice";
-            this.Textbox_sellingPrice.Size = new System.Drawing.Size(100, 37);
+            this.Textbox_sellingPrice.Size = new System.Drawing.Size(100, 27);
             this.Textbox_sellingPrice.TabIndex = 11;
             // 
             // numericUpDown_Quantity
             // 
             this.numericUpDown_Quantity.Location = new System.Drawing.Point(174, 154);
             this.numericUpDown_Quantity.Name = "numericUpDown_Quantity";
-            this.numericUpDown_Quantity.Size = new System.Drawing.Size(72, 37);
+            this.numericUpDown_Quantity.Size = new System.Drawing.Size(72, 27);
             this.numericUpDown_Quantity.TabIndex = 12;
             // 
             // Textbox_ItemCode
             // 
             this.Textbox_ItemCode.Location = new System.Drawing.Point(37, 81);
             this.Textbox_ItemCode.Name = "Textbox_ItemCode";
-            this.Textbox_ItemCode.Size = new System.Drawing.Size(210, 37);
+            this.Textbox_ItemCode.Size = new System.Drawing.Size(210, 27);
             this.Textbox_ItemCode.TabIndex = 13;
             // 
             // Button_Add
@@ -155,9 +155,9 @@
             // 
             // AddItem_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 381);
+            this.ClientSize = new System.Drawing.Size(416, 381);
             this.Controls.Add(this.Button_Cancel);
             this.Controls.Add(this.Button_Add);
             this.Controls.Add(this.Textbox_ItemCode);

@@ -21,5 +21,15 @@ namespace SalesSystem
         {
         
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Cancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
